@@ -75,10 +75,10 @@
                    (velocity ship-state))
                 (* 2 (height ship-state)))))
     (let ((burnrt (/ (+ acc gravity)
-                     engine-strength)) )
+                     engine-strength)))
       (if (< burnrt 0)
           0
-          burnrt)))))
+          burnrt))))
 ;; Uppgift 11
 
 (define (optimal-constant-acc ship-state)
@@ -114,8 +114,8 @@
     (display "(")
     (display "height ") (display (height ship-state))
     (display " velocity ") (display (velocity ship-state))
-    (display " fuel '") (display (fuel ship-state))
-    (display '")'")))
+    (display " fuel ") (display (fuel ship-state))
+    (display '")")))
 
 (define landed?
   (lambda (ship-state)
@@ -143,7 +143,7 @@
         0)))
 (define play
   (lambda (strategy)
-    (lander-loop (make-initial-ship-state) strategy))))
+    (lander-loop (make-initial-ship-state) strategy)))
 
 (define make-initial-ship-state
   (lambda ()
