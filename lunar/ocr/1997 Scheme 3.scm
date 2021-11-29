@@ -1,39 +1,38 @@
-
-
-Sep 24 15:19 1997 lunaresscm Emacs buffer Page 3 
-(newline (display (display (display (display (display 
-(n) "height ") (display (height ship-state)) velocity ") (display (velocity ship-state)) fuel ") (display (fuel ship-state)) 
-
-
-1! 
-
-
-(define landed? (lambda (ship-state) (<= (height ship-state) 
-
-
-
-
-(define end-game (lambda (ship-state) (let ((final-velocity (newline) (display final-velocity) (if (›=--- final-velocity safe-velocity) Good landing!") You crashed!")) 
-
-
-
-
-(display (display (newline) (display "GAME OVER") (newline)))) 
-
-(define get-burn-rate (lambda 0 (newline) (display "Burn? (if (eciv? (read) 1 0))) (define play (lambda (strategy) (lander-loop (make-initial-ship-state) 
-
-p 
-y) 
-iifine make-initial-ship-state (lambda H (make-ship-state 50 0 20))) 
-(define )fine ( efine (define 
-
-
-dt 1) gravity ,5) safe-velocity -2) engine-strength 1) 
-itofiloin s jefou 
-IL 
-
-
-
-g5 0 
-
-( 4•140/v) 
+Sep 24 15:19 1997 lunar.scm Emacs buffer Page 3
+(newline)
+(display " ()
+(display "height ") (display (height ship-state))
+(display " velocity ") (display (velocity ship-state))
+(display " fuel '") (display (fuel ship-state))
+(display '")'")))
+(define landed?
+(lambda (ship-state)
+(<= (height ship-state) 0)))
+(define end-game |
+(lambda (ship-state)
+a (let ((final-velocity (velocity ship-state)))
+& (newline)
+(display final-velocity)
+(if (>= final-velocity safe-velocity)
+(display " Good landing!")
+| (display " You crashed!'"))
+| Ö (newline)
+(display "GAME OVER")
+(newline) ))) |
+| (define get-burn-rate
+(lambda ()
+(newline) |
+(display "Burn? '") | - a | or
+(if (eqv? (read) '"y)
+l
+0)))
+(define play
+(lambda (strategy)
+(lander-loop (make-initial-ship-state) strategy) )))
+Örfine make-initial-ship-state
+(lambda ()
+(make-ship-state 50 0 20)))
+(define dt 1)
+Öns gravity .5) |
+efine safe-velocity -2)
+(define engine-strength 1)
